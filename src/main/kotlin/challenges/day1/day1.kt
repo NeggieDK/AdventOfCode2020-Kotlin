@@ -8,19 +8,19 @@ fun execute() {
     val t1 = measureTimeMillis {
         println("Part 1: ${part1(part1Lines)}")
     }
-    println("Part 1 quadratic took: ${t1}")
+    println("Part 1 quadratic took: $t1")
     val t2 = measureTimeMillis {
         println("Part 1: ${part1HashSet(part1Lines)}")
     }
-    println("Part 1 w/ hashset took: ${t2}")
+    println("Part 1 w/ hashset took: $t2")
     val t3 = measureTimeMillis {
         println("Part 2: ${part2(part1Lines)}")
     }
-    println("Part 2 n^3 took: ${t3}")
+    println("Part 2 n^3 took: $t3")
     val t4 = measureTimeMillis {
         println("Part 2: ${part2WithHashset(part1Lines)}")
     }
-    println("Part 2 w/ hashset took: ${t4}")
+    println("Part 2 w/ hashset took: $t4")
 }
 
 fun getLines(path: String): List<Int>{

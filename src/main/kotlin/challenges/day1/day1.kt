@@ -6,7 +6,14 @@ import kotlin.system.measureTimeMillis
 fun execute(){
     val t = measureTimeMillis {
         val part1Lines = getLines(getResourcePath("day1.txt"))
-        println("Part 1: ${part1(part1Lines)}")
+        val t1 = measureTimeMillis {
+            println("Part 1: ${part1(part1Lines)}")
+        }
+        println(t1)
+        val t2 = measureTimeMillis {
+            println("Part 1 with hashset: ${part1HashSet(part1Lines)}")
+        }
+        println(t2)
         println("Part 2: ${part2(part1Lines)}")
     }
     println("Day 1 took ${t}ms to execute.")
@@ -24,6 +31,18 @@ fun part1(lines: List<Int>): Int {
             if(number1.value + number2.value == 2020){
                 return number1.value * number2.value
             }
+        }
+    }
+    return 0
+}
+
+fun part1HashSet(lines: List<Int>): Int{
+    val result = 2020
+    val linesHash = lines.toHashSet()
+
+    for(line in lines){
+        if(linesHash.contains(result-line)){
+            return line * (result-line)
         }
     }
     return 0

@@ -1,5 +1,6 @@
 package challenges.day1
 
+import getResourcePath
 import java.io.File
 import kotlin.system.measureTimeMillis
 

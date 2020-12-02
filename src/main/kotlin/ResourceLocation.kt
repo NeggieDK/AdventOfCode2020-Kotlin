@@ -1,5 +1,3 @@
-package challenges.day1
-
 const val path = "C:\\Users\\Aaron\\IdeaProjects\\AdventOfCode2020-Kotlin\\src\\main\\resources\\"
 
 fun getResourcePath(filename: String): String{

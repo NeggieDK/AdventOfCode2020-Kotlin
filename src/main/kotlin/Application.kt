@@ -1,4 +1,4 @@
-import challenges.day4.execute
+import challenges.day5.execute
 
 fun main(){
     execute()

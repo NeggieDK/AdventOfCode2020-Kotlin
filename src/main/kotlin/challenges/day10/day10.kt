@@ -2,7 +2,6 @@ package challenges.day10
 
 import getResourcePath
 import java.io.File
-import kotlin.system.measureNanoTime
 import kotlin.system.measureTimeMillis
 
 fun execute(){
